@@ -1,6 +1,6 @@
 {
   "name": "sloproxy",
-  "version": "0.5.1",
+  "version": "0.8.0",
   "description": "Single Local Origin Proxy for routing OpenAI-compatible inference to models running on your own machine.",
   "type": "module",
   "bin": {
