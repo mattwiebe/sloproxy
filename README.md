@@ -1,3 +1,5 @@
+![SLOProxy](assets/sloproxy.png)
+
 # SLOProxy
 
 SLOProxy is the Single Local Origin Proxy: a small Node.js CLI for routing OpenAI-compatible inference requests to models running on your own machine.
