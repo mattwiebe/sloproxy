@@ -1,0 +1,44 @@
+{
+  "name": "sloproxy",
+  "version": "0.5.1",
+  "description": "Single Local Origin Proxy for routing OpenAI-compatible inference to models running on your own machine.",
+  "type": "module",
+  "bin": {
+    "sloproxy": "bin/sloproxy.mjs"
+  },
+  "files": [
+    "bin/sloproxy.mjs",
+    "local/server.mjs",
+    "scripts/launch-agent.mjs",
+    "README.md"
+  ],
+  "scripts": {
+    "up": "node local/server.mjs",
+    "init": "node local/server.mjs init",
+    "start": "node scripts/launch-agent.mjs start",
+    "stop": "node scripts/launch-agent.mjs stop",
+    "status": "node scripts/launch-agent.mjs status",
+    "rotate-key": "node scripts/launch-agent.mjs rotate-key",
+    "service:install": "node scripts/launch-agent.mjs install",
+    "service:uninstall": "node scripts/launch-agent.mjs uninstall",
+    "lint": "node --check bin/sloproxy.mjs && node --check local/server.mjs && node --check scripts/launch-agent.mjs",
+    "test": "node --test",
+    "publish:npm": "npm publish",
+    "prepublishOnly": "npm run lint && npm test"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattwiebe/sloproxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattwiebe/sloproxy/issues"
+  },
+  "homepage": "https://github.com/mattwiebe/sloproxy#readme",
+  "license": "GPL-2.0-or-later",
+  "engines": {
+    "node": ">=20"
+  }
+}
