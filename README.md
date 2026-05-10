@@ -1,4 +1,6 @@
-![SLOProxy](assets/sloproxy.png)
+<p align="center">
+  <img src="assets/sloproxy.png" alt="SLOProxy" width="420">
+</p>
 
 # SLOProxy
 
